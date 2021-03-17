@@ -5,11 +5,10 @@ import {DragDropModule} from '@angular/cdk/drag-drop'
 
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,DragDropModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
