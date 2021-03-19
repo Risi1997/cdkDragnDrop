@@ -2,7 +2,7 @@
 
   <div #contenedor class="categories" cdkDropListGroup> 
     <ng-container *ngFor="let item of items;let i=index">
-      <div [ngStyle]="{'background-color': item.color}" class="categories-item" cdkDropList cdkDropListOrientation="horizontal" [cdkDropListData]="{item:item,index:i}" 
+      <div [ngStyle]="{'background-color': item.color}" class="categories-item" cdkDropList [cdkDropListData]="{item:item,index:i}" 
        (cdkDropListDropped)="drop($event)" >
         <div class="inner"  cdkDrag>
           <div *cdkDragPlaceholder></div>
